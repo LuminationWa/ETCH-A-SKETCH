@@ -18,15 +18,18 @@ buttonContainer.append(smallText);
 
 // Grid
 
-
-
 const gridContainer = document.createElement('div');
 gridContainer.id = 'gridContainer';
 body.append(gridContainer);
 
 function makeGrid(rows, cols) {
+  // Sets number of rows and columns according to input and adds divs to them after
+
   gridContainer.style.setProperty('--grid-rows', rows);
   gridContainer.style.setProperty('--grid-cols', cols);
+
+  // By calculating the grid area makes a div for each cell
+
   for (c = 0; c < (rows * cols); c++) {
     let cell = document.createElement("div");
     cell.classList.add ('grid-item');
@@ -37,6 +40,7 @@ function makeGrid(rows, cols) {
   };
 };
 
+// Default grid
 makeGrid(16, 16);
 
 function changeColor() {

@@ -3,6 +3,8 @@
   --grid-rows: 1;
 }
 
+/* Header */
+
 #buttonContainer {
   display: flex;
   justify-content: center;
@@ -34,6 +36,7 @@
   margin-bottom: 10px;
 }
 
+/* Grid */
 
 #gridContainer {
   display: grid;
